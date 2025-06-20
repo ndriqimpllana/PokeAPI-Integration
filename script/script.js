@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         nameElement.textContent = pokemon.name;
-        nameElement.className = 'h3 fw-bold text-capitalize text-dark mb-2'
         typesContainer.className = 'd-flex justify-content-center gap-2 mt-2';
 
         pokemon.types.forEach(typeInfo => {
