@@ -39,8 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
         pokemonDisplay.innerHTML = '';
 
         const nameElement = document.createElement('h2');
-        nameElement.className = 'h3 fw-bold text-capitalize text-dark mb-2'; //adding some styling with bootstrap classes
         const imageElement = document.createElement('img');
+        const typesContainer = document.createElement('div');
+
+        nameElement.className = 'h3 fw-bold text-capitalize text-dark mb-2'; //adding some styling with bootstrap classes
         imageElement.src = pokemon.sprites.other['official-artwork'].front_default || pokemon.sprites.front_default;
         imageElement.alt = `Image of ${pokemon.name}`;
         imageElement.className = 'img-fluid mb-3';
@@ -50,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
             imageElement.alt = 'Image not availabile';
         };
 
-        const typesContainer = document.createElement('div');
+        nameElement.textContent = pokemon.name;
+        nameElement.className = 'h3 fw-bold text-capitalize text-dark mb-2'
         typesContainer.className = 'd-flex justify-content-center gap-2 mt-2';
 
         pokemon.types.forEach(typeInfo => {
