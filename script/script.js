@@ -42,11 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
             imageElement.src = 'https://placehold.co/150x150/f87171/ffffff?text=Image+Not+Found';
             imageElement.alt = 'Image not availabile';
         };
-<<<<<<< HEAD
-=======
 
         nameElement.textContent = pokemon.name;
->>>>>>> c4bd12d207fbf6fb1a272909a63e29945345ec34
         typesContainer.className = 'd-flex justify-content-center gap-2 mt-2';
         pokemon.types.forEach(typeInfo => {
             const typeBadge = document.createElement('span');
