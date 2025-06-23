@@ -15,6 +15,7 @@ body {
 .card {
     border-radius: 30px;
     box-shadow: 3px 6px 12px lightgray;
+    
 }
 
 #search-button {
@@ -29,11 +30,11 @@ body {
     transform: scale(1.1);
 }
 
-#pokemon-Input {
+#pokemon-input {
     transition: transform 0.3 ease-in-out;
 }
 
-#pokemon-Input {
+#pokemon-input {
     transform: scale(1);
 }
 /* Type colors for the bonus feature.
